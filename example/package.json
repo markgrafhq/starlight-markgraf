@@ -1,0 +1,19 @@
+{
+  "name": "markgraf-starlight-example",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "astro dev",
+    "build": "astro build"
+  },
+  "dependencies": {
+    "@astrojs/react": "^3.6.0",
+    "@astrojs/starlight": "^0.28.0",
+    "@markgrafhq/markgraf-react": "^0.1.0",
+    "@markgrafhq/markgraf-starlight": "^0.1.0",
+    "astro": "^4.16.0",
+    "react": "^18.0.0",
+    "react-dom": "^18.0.0"
+  }
+}
