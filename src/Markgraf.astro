@@ -1,0 +1,18 @@
+---
+import { MarkgrafPlayer } from "@markgrafhq/markgraf-react";
+
+interface Props {
+  src: string;
+  renderer?: "canvas" | "svg";
+  class?: string;
+}
+
+const { src, renderer = "canvas", class: className } = Astro.props;
+---
+
+<MarkgrafPlayer
+  client:visible
+  src={src}
+  renderer={renderer}
+  className={className}
+/>

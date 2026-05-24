@@ -1,0 +1,60 @@
+{
+  "name": "@markgrafhq/markgraf-starlight",
+  "version": "0.1.0",
+  "description": "Starlight/Astro integration for embedding markgraf animations. Transforms ```markgraf fenced code blocks into a live player and exposes a <Markgraf src=\"…\" /> component.",
+  "type": "module",
+  "main": "./dist/index.js",
+  "module": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "default": "./dist/index.js"
+    },
+    "./Markgraf.astro": "./src/Markgraf.astro",
+    "./remark": {
+      "default": "./dist/remark-markgraf.js"
+    },
+    "./css": "./node_modules/@markgrafhq/markgraf-react/dist/markgraf-react.css"
+  },
+  "files": [
+    "dist",
+    "src/Markgraf.astro",
+    "README.md",
+    "LICENSE"
+  ],
+  "sideEffects": false,
+  "scripts": {
+    "build": "tsc -p tsconfig.json && cp src/remark-markgraf.mjs dist/remark-markgraf.js"
+  },
+  "peerDependencies": {
+    "astro": ">=4",
+    "@astrojs/react": ">=3",
+    "react": ">=18",
+    "react-dom": ">=18"
+  },
+  "dependencies": {
+    "@markgrafhq/markgraf-react": "^0.1.0",
+    "unist-util-visit": "^5"
+  },
+  "devDependencies": {
+    "typescript": "^5"
+  },
+  "keywords": [
+    "markgraf",
+    "starlight",
+    "astro",
+    "astro-integration",
+    "remark",
+    "animation",
+    "diagram"
+  ],
+  "license": "MIT",
+  "author": "Mark Eibes <mark.eibes@gmail.com>",
+  "homepage": "https://github.com/markgrafhq/markgraf-starlight#readme",
+  "bugs": "https://github.com/markgrafhq/markgraf-starlight/issues",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/markgrafhq/markgraf-starlight.git"
+  }
+}
