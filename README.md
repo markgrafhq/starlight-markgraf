@@ -1,11 +1,11 @@
-# @markgrafhq/markgraf-starlight
+# @markgrafhq/starlight-markgraf
 
 Astro/Starlight integration for embedding [markgraf](https://github.com/markgrafhq) animations.
 
 ## Install
 
 ```bash
-npm install @markgrafhq/markgraf-starlight @markgrafhq/markgraf-react @astrojs/react react react-dom
+npm install @markgrafhq/starlight-markgraf @markgrafhq/markgraf-react @astrojs/react react react-dom
 ```
 
 ## Configure
@@ -15,7 +15,7 @@ npm install @markgrafhq/markgraf-starlight @markgrafhq/markgraf-react @astrojs/r
 import { defineConfig } from "astro/config";
 import react from "@astrojs/react";
 import starlight from "@astrojs/starlight";
-import markgraf from "@markgrafhq/markgraf-starlight";
+import markgraf from "@markgrafhq/starlight-markgraf";
 
 export default defineConfig({
   integrations: [react(), starlight({ title: "Docs" }), markgraf()],
@@ -48,7 +48,7 @@ Or use the component directly in MDX/Astro:
 
 ```astro
 ---
-import Markgraf from "@markgrafhq/markgraf-starlight/Markgraf.astro";
+import Markgraf from "@markgrafhq/starlight-markgraf/Markgraf.astro";
 ---
 
 <Markgraf src={`seed 1\nframe v1 { +node a "A" }`} />

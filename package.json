@@ -1,5 +1,5 @@
 {
-  "name": "@markgrafhq/markgraf-starlight",
+  "name": "@markgrafhq/starlight-markgraf",
   "version": "0.1.0",
   "description": "Starlight/Astro integration for embedding markgraf animations. Transforms ```markgraf fenced code blocks into a live player and exposes a <Markgraf src=\"…\" /> component.",
   "type": "module",
@@ -51,10 +51,10 @@
   ],
   "license": "MIT",
   "author": "Mark Eibes <mark.eibes@gmail.com>",
-  "homepage": "https://github.com/markgrafhq/markgraf-starlight#readme",
-  "bugs": "https://github.com/markgrafhq/markgraf-starlight/issues",
+  "homepage": "https://github.com/markgrafhq/starlight-markgraf#readme",
+  "bugs": "https://github.com/markgrafhq/starlight-markgraf/issues",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/markgrafhq/markgraf-starlight.git"
+    "url": "git+https://github.com/markgrafhq/starlight-markgraf.git"
   }
 }

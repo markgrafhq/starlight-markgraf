@@ -2,7 +2,7 @@ import { visit } from "unist-util-visit";
 
 const importNode = {
   type: "mdxjsEsm",
-  value: 'import Markgraf from "@markgrafhq/markgraf-starlight/Markgraf.astro";',
+  value: 'import Markgraf from "@markgrafhq/starlight-markgraf/Markgraf.astro";',
   data: {
     estree: {
       type: "Program",
@@ -18,8 +18,8 @@ const importNode = {
           ],
           source: {
             type: "Literal",
-            value: "@markgrafhq/markgraf-starlight/Markgraf.astro",
-            raw: '"@markgrafhq/markgraf-starlight/Markgraf.astro"',
+            value: "@markgrafhq/starlight-markgraf/Markgraf.astro",
+            raw: '"@markgrafhq/starlight-markgraf/Markgraf.astro"',
           },
         },
       ],

@@ -1,6 +1,6 @@
 # Example Starlight site
 
-Minimal Starlight site that uses `@markgrafhq/markgraf-starlight`.
+Minimal Starlight site that uses `@markgrafhq/starlight-markgraf`.
 
 ```bash
 cd example
