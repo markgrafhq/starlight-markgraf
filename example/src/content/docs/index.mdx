@@ -1,0 +1,21 @@
+---
+title: starlight-markgraf
+description: Live markgraf animations rendering inside a Starlight docs site.
+---
+
+This site is the live demo for [`starlight-markgraf`](https://github.com/markgrafhq/starlight-markgraf),
+the Astro/Starlight integration that turns ```markgraf fenced code blocks into a live player.
+
+A request flowing from client to API:
+
+```markgraf
+seed 1
+frame v1 {
+  +node client "Client"
+  +node api    "API"
+  +edge client api
+  client -> api "GET /user/42"
+}
+```
+
+See the [Markgraf demo guide](/starlight-markgraf/guides/markgraf/) for more.

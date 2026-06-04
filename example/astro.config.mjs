@@ -4,6 +4,8 @@ import starlight from "@astrojs/starlight";
 import markgraf from "@markgrafhq/starlight-markgraf";
 
 export default defineConfig({
+  site: "https://markgrafhq.github.io",
+  base: "/starlight-markgraf/",
   integrations: [
     react(),
     starlight({
