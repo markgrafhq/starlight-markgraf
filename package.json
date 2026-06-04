@@ -25,7 +25,7 @@
   ],
   "sideEffects": false,
   "scripts": {
-    "build": "tsc -p tsconfig.json && cp src/remark-markgraf.mjs dist/remark-markgraf.js"
+    "build": "tsc -p tsconfig.json && cp src/remark-markgraf.mjs dist/remark-markgraf.mjs && cp src/remark-markgraf.mjs dist/remark-markgraf.js"
   },
   "peerDependencies": {
     "astro": ">=4",
