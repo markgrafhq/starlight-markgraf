@@ -35,7 +35,7 @@ Fenced code blocks with the `markgraf` language render as live players:
 ````markdown
 ```markgraf
 seed 1
-frame v1 {
+keyframe v1 {
   +node client "Client"
   +node api    "API"
   +edge client api
@@ -51,5 +51,5 @@ Or use the component directly in MDX/Astro:
 import Markgraf from "@markgrafhq/starlight-markgraf/Markgraf.astro";
 ---
 
-<Markgraf src={`seed 1\nframe v1 { +node a "A" }`} />
+<Markgraf src={`seed 1\nkeyframe v1 { +node a "A" }`} />
 ```
