@@ -34,7 +34,7 @@
     "react-dom": ">=18"
   },
   "dependencies": {
-    "@markgrafhq/markgraf-react": "^0.1.0",
+    "@markgrafhq/markgraf-react": "^0.1.13",
     "unist-util-visit": "^5"
   },
   "devDependencies": {
