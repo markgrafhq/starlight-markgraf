@@ -19,4 +19,30 @@ jobs:
           node-version: "24"
       - run: npm install
       - run: npm run build
-      - run: npm publish --provenance --access public
+      - name: Check npm publish auth path
+        env:
+          NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
+        shell: bash
+        run: |
+          set -euo pipefail
+          package_name="$(node -p "require('./package.json').name")"
+          npm --version
+          if npm view "$package_name" version >/dev/null 2>&1; then
+            echo "$package_name already exists on npm; publishing with trusted publishing/OIDC."
+          elif [[ -n "${NPM_TOKEN:-}" ]]; then
+            echo "$package_name is new; bootstrapping first publish with NPM_TOKEN."
+          else
+            echo "::error::$package_name is not on npm yet. Add a one-shot granular npm automation token as this repo's NPM_TOKEN secret for the first publish. After it succeeds, configure npm Trusted Publisher for this repo and delete the secret."
+            exit 1
+          fi
+      - name: Configure npm token for bootstrap publish
+        env:
+          NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
+        shell: bash
+        run: |
+          set -euo pipefail
+          if [[ -n "${NPM_TOKEN:-}" ]]; then
+            printf '//registry.npmjs.org/:_authToken=%s\n' "$NPM_TOKEN" > ~/.npmrc
+          fi
+      - run: npm pack --dry-run
+      - run: npm publish --provenance --access public --tag latest
