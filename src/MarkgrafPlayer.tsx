@@ -163,7 +163,7 @@ const CanvasPlayer = ({
 
   return (
     <div
-      className={`markgraf-doc-player ${className ?? ""}`}
+      className={`not-content markgraf-doc-player ${className ?? ""}`}
       data-markgraf-theme={theme}
     >
       <canvas
@@ -187,7 +187,7 @@ const SvgPlayer = ({
 
   return (
     <div
-      className={`markgraf-doc-player ${className ?? ""}`}
+      className={`not-content markgraf-doc-player ${className ?? ""}`}
       data-markgraf-theme={theme}
     >
       <svg
