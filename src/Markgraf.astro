@@ -1,18 +1,21 @@
 ---
-import { MarkgrafPlayer } from "@markgrafhq/markgraf-react";
+import { StarlightMarkgrafPlayer } from "./MarkgrafPlayer";
+import "./player.css";
 
 interface Props {
   src: string;
   renderer?: "canvas" | "svg";
   class?: string;
+  controls?: boolean;
 }
 
-const { src, renderer = "canvas", class: className } = Astro.props;
+const { src, renderer = "canvas", class: className, controls = true } = Astro.props;
 ---
 
-<MarkgrafPlayer
+<StarlightMarkgrafPlayer
   client:visible
   src={src}
   renderer={renderer}
   className={className}
+  controls={controls}
 />

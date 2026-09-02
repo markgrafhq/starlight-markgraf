@@ -53,3 +53,20 @@ import Markgraf from "@markgrafhq/starlight-markgraf/Markgraf.astro";
 
 <Markgraf src={`seed 1\nscene v1 { + a: A }`} />
 ```
+
+Players include the floating play, scrub, time, and speed controls by default.
+The Astro component accepts `controls={false}` when a page should hide them.
+
+Custom controls belong in a React island so the control function stays in the
+browser rather than crossing Astro's serialization boundary:
+
+```tsx
+import { StarlightMarkgrafPlayer } from "@markgrafhq/starlight-markgraf";
+
+export const Diagram = ({ src }: { src: string }) => (
+  <StarlightMarkgrafPlayer
+    src={src}
+    controls={(api) => <MyDiagramControls api={api} />}
+  />
+);
+```

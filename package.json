@@ -20,6 +20,8 @@
   "files": [
     "dist",
     "src/Markgraf.astro",
+    "src/MarkgrafPlayer.tsx",
+    "src/player.css",
     "README.md",
     "LICENSE"
   ],
@@ -27,7 +29,7 @@
     "./dist/markgraf-react.css"
   ],
   "scripts": {
-    "build": "tsc -p tsconfig.json && cp src/remark-markgraf.mjs dist/remark-markgraf.mjs && cp src/remark-markgraf.mjs dist/remark-markgraf.js && cp node_modules/@markgrafhq/markgraf-react/dist/markgraf-react.css dist/markgraf-react.css"
+    "build": "tsc -p tsconfig.json && cp src/remark-markgraf.mjs dist/remark-markgraf.mjs && cp src/remark-markgraf.mjs dist/remark-markgraf.js && cp src/player.css dist/markgraf-react.css"
   },
   "peerDependencies": {
     "astro": ">=4",
@@ -40,6 +42,7 @@
     "unist-util-visit": "^5"
   },
   "devDependencies": {
+    "@types/react": "^19.0.0",
     "typescript": "^5"
   },
   "keywords": [
