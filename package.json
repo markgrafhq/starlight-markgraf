@@ -1,6 +1,6 @@
 {
   "name": "@markgrafhq/starlight-markgraf",
-  "version": "0.0.35",
+  "version": "0.0.36",
   "description": "Starlight/Astro integration for embedding markgraf animations. Transforms ```markgraf fenced code blocks into a live player and exposes a <Markgraf src=\"…\" /> component.",
   "type": "module",
   "main": "./dist/index.js",
