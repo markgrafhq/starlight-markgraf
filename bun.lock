@@ -1,11 +1,10 @@
 {
   "lockfileVersion": 1,
-  "configVersion": 0,
   "workspaces": {
     "": {
       "name": "@markgrafhq/starlight-markgraf",
       "dependencies": {
-        "@markgrafhq/markgraf-react": "0.0.41",
+        "@markgrafhq/markgraf-react": "0.0.42",
         "unist-util-visit": "^5",
       },
       "devDependencies": {
@@ -237,7 +236,7 @@
 
     "@jridgewell/trace-mapping": ["@jridgewell/trace-mapping@0.3.31", "", { "dependencies": { "@jridgewell/resolve-uri": "^3.1.0", "@jridgewell/sourcemap-codec": "^1.4.14" } }, "sha512-zzNR+SdQSDJzc8joaeP8QQoCQr8NuYx2dIIytl1QeBEZHJ9uW6hebsrYgbz8hJwUQao3TWCMtmfV8Nu1twOLAw=="],
 
-    "@markgrafhq/markgraf-react": ["@markgrafhq/markgraf-react@0.0.41", "", { "peerDependencies": { "react": ">=18", "react-dom": ">=18" } }, "sha512-uHDmaQ2zt/uStnDz18cITcN53BuMDwJaW/4QGyZ9up2y6AMtHy3k5SGqx+iIA2C1XXR6IgHRXzsRDdzBIziaIw=="],
+    "@markgrafhq/markgraf-react": ["@markgrafhq/markgraf-react@0.0.42", "", { "peerDependencies": { "react": ">=18", "react-dom": ">=18" } }, "sha512-Y39s4+ZDcbpofXpTL8gMMT01KQb1PTTBuSFF+rukS58kxso8e8OQktErtltKttYodbClG18+0YFoCky583vFJA=="],
 
     "@napi-rs/wasm-runtime": ["@napi-rs/wasm-runtime@1.1.6", "", { "dependencies": { "@tybys/wasm-util": "^0.10.3" }, "peerDependencies": { "@emnapi/core": "^1.7.1", "@emnapi/runtime": "^1.7.1" } }, "sha512-ZLv/JdUfkvOy9eCnnBaGfiO+XimbjebAeO+MRQqD/B+FR1tnRN0tpKSJHRbE8sFfS6aqsXZ67TQjfwfsxULVbg=="],
 
